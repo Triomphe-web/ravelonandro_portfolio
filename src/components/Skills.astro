@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Médecine Génerale</h2>
+		<p>Le médecin généraliste est le premier point de contact pour la plupart des gens dans le système de santé. Il joue un rôle crucial dans la coordination des soins et la collaboration avec d'autres spécialistes, en s'assurant que les patients reçoivent les soins appropriés au bon moment.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Passionée</h2>
+		<p>Pour ceux qui ressentent cet appel, la médecine représente un voyage extraordinaire, un défi intellectuel et émotionnel constant, mais aussi une source d'immense satisfaction et de réalisation personnelle.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Recherche Scientifique</h2>
+		<p>L'objectif ultime de la recherche médicale est de développer de nouveaux traitements plus efficaces et moins toxiques pour les patients.Les résultats de la recherche scientifique ont un impact direct sur la qualité des soins et contribuent  à l'amélioration des techniques diagnostiques et à la mise en place de programmes de prévention plus efficaces.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
